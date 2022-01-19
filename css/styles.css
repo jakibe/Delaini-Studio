@@ -338,7 +338,65 @@ div {
 textarea {
   resize: none;
 }
+.text-center {
+  text-align: center !important;
+}
+.form-cont input {
+  width: 49%;
+  background: transparent;
+  color: white;
+}
+.form-cont textarea {
+  margin-top: 10px;
+  width: 100%;
+  background: transparent;
+  color: white;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
 
+.btn-primary:hover {
+  color: #fff;
+  background-color: #d90000;
+  border-color: #0062cc;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #ff0000;
+  border-color: #007bff;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #cc0000;
+  border-color: #005cbf;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 38, 38, 0.5);
+}
+.form-cont {
+  text-align: center;
+  position: relative;
+  width: 700px;
+  max-width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
 .bg-img {
   /* The image used */
   background-image: url("../images/backgrounds/c_image.jpg");
@@ -347,8 +405,28 @@ textarea {
   min-height: 300px;
 
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: cover;
   background-repeat: no-repeat;
-  background-size: 1200px 700px;
+  background-size: cover;
   position: relative;
+  margin-top: 50px;
+}
+.con {
+  padding-bottom: 30px;
+}
+.social img {
+  border-radius: 50%;
+  transition: 0.2s ease-out;
+}
+.social img:hover {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  margin: -3px;
+  padding: 3px;
+  background: yellowgreen;
+}
+#links {
+  margin: 50px;
+}
+body {
+  overflow-x: hidden;
 }
